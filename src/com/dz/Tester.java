@@ -5,12 +5,11 @@ public class Tester {
     ATM atm1 = new ATM(account);
     ATM atm2 = new ATM(account);
     ATM atm3 = new ATM(account);
-    ATM atm4 = new ATM(account);
+
     public void go(){
         account.printBalance();
         new Thread(atm1).start();
         new Thread(atm2).start();
         new Thread(atm3).start();
-        new Thread(atm4).start();
     }
 }
